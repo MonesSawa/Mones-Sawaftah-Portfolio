@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Mones Sawaftah — Game & Software Developer</title>
+<title>Mones Sawaftah — IT Support, Front-End & Game Development</title>
 <script>try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
-<meta name="description" content="Portfolio of Mones Sawaftah, a Unity game developer and full-stack developer based in Dubai.">
+<meta name="description" content="Portfolio of Mones Sawaftah, an IT graduate in Dubai who supports and trains people on real software, and builds front-end web projects and Unity games.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Metamorphous&family=Marcellus&family=Marcellus+SC&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
@@ -107,10 +107,6 @@ body,.alt{transition:background .4s,color .4s}
 :root[data-theme="light"] .hero .btn{border-color:#1B1740;color:#1B1740}
 :root[data-theme="light"] .hero .btn.p{border-color:var(--btn)}
 :root[data-theme="light"] .spark{color:#B07A00}
-/* coming-soon panels */
-.soon .shot{background:repeating-linear-gradient(45deg,var(--panel),var(--panel) 12px,var(--bg) 12px,var(--bg) 24px);border:2px dashed var(--line);color:var(--mute)}
-.soon .shot .ph{background:var(--bg);color:var(--mute);border:1px solid var(--line)}
-.soonmsg{font-family:var(--head);font-size:20px;font-weight:600}
 .badge{display:inline-block;font-size:13px;font-weight:600;padding:2px 12px;border-radius:99px;background:var(--btn);color:var(--btnink);margin-bottom:10px}
 /* hidden spell */
 footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px}
@@ -133,7 +129,6 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:1
 :root[data-theme="fire"] .rune{color:#FF9A3C;opacity:.5}
 :root[data-theme="fire"] .hero h1{text-shadow:0 0 30px rgba(255,110,30,.75),0 0 8px rgba(255,190,80,.5)}
 :root[data-theme="fire"] .shot{background:radial-gradient(circle at 70% 30%,#C2410C,#26110D 70%)}
-:root[data-theme="fire"] .soon .shot{background:repeating-linear-gradient(45deg,var(--panel),var(--panel) 12px,var(--bg) 12px,var(--bg) 24px)}
 :root[data-theme="fire"] .spark{color:#FFB340}
 .fireball{position:fixed;z-index:65;width:46px;height:46px;border-radius:50%;pointer-events:none;background:radial-gradient(circle at 40% 40%,#FFF6C8,#FFB340 40%,#FF4D0A 75%,transparent 76%);box-shadow:0 0 30px 12px rgba(255,110,20,.8),0 0 70px 24px rgba(255,60,0,.45)}
 .flash{position:fixed;inset:0;z-index:57;pointer-events:none;background:radial-gradient(circle,#FFF3C4,#FF7A1A 45%,transparent 75%);animation:flash .9s ease-out forwards}
@@ -232,7 +227,7 @@ button.btn{font:inherit;font-weight:600;background:none;cursor:pointer}
 .lsep{font:600 13px var(--body);letter-spacing:.08em;text-transform:uppercase;color:var(--mute);padding:14px 4px 0}
 @media (max-width:900px){.lsep{display:none}}
 /* Metamorphous and Marcellus ship one weight (400): never fake bold */
-h2,h3,.hero h1,.contact h2,.contact a.big,.soonmsg,.plist i,.role,.eyebrow{font-weight:400}
+h2,h3,.hero h1,.contact h2,.contact a.big,.plist i,.role,.eyebrow{font-weight:400}
 .role,.eyebrow{font-family:var(--headsc)}
 @media (max-width:900px){.showcase{grid-template-columns:1fr}.plist{grid-auto-flow:column;grid-auto-columns:minmax(250px,1fr);overflow-x:auto;padding-bottom:6px}.pd{grid-template-columns:1fr}}
 @media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.hero h1,.role,.hero p,.hero .btns,.pp.on,.rune{animation:none}}
@@ -247,8 +242,8 @@ h2,h3,.hero h1,.contact h2,.contact a.big,.soonmsg,.plist i,.role,.eyebrow{font-
     <div class="in">
       <svg class="rune" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true"><circle cx="100" cy="100" r="96" stroke-dasharray="2 6"/><circle cx="100" cy="100" r="86"/><polygon points="100,14 174.5,143 25.5,143"/><polygon points="100,186 25.5,57 174.5,57"/><circle cx="100" cy="100" r="52" stroke-dasharray="10 5"/><circle cx="100" cy="100" r="8"/></svg>
       <h1>Mones Sawaftah</h1>
-      <div class="role">Game &amp; Software Developer</div>
-      <p>I build games in Unity and the web and mobile software around them. Based in Dubai.</p>
+      <div class="role">IT Support · Front-End · Game Development</div>
+      <p>I keep software working for the people who use it, and I build web projects and Unity games. Based in Dubai.</p>
       <div class="btns"><a class="btn p" href="#work">See my work</a><a class="btn" href="#contact">Get in touch</a></div>
     </div>
   </div>
@@ -263,7 +258,7 @@ h2,h3,.hero h1,.contact h2,.contact a.big,.soonmsg,.plist i,.role,.eyebrow{font-
     <div class="showcase">
       <ul class="plist" role="tablist" aria-label="Projects">
         <li data-k="game" data-skills="unity,csharp,vr"><button role="tab" aria-selected="true" aria-controls="pp0"><i>01</i><span><b>VR Driving Simulator</b><small>Game · Unity</small></span><em>Featured</em></button></li>
-        <li data-k="game"><button role="tab" aria-selected="false" aria-controls="pp1"><i>02</i><span><b>Game Project Two</b><small>Game · In development</small></span><em class="q">Soon</em></button></li>
+        <li data-k="game" data-skills="unity,csharp"><button role="tab" aria-selected="false" aria-controls="pp1"><i>02</i><span><b>Survivors-like Roguelite</b><small>Game · Unity</small></span><em class="q">In dev</em></button></li>
         <li class="lsep" data-k="web" role="presentation" aria-hidden="true">Web &amp; mobile</li>
         <li data-k="web" data-skills="javascript,node"><button role="tab" aria-selected="false" aria-controls="pp2"><i>03</i><span><b>3 Card Blackjack</b><small>Web · Browser game</small></span><em>Live</em></button></li>
         <li data-k="web" data-skills="vue,javascript,mongodb"><button role="tab" aria-selected="false" aria-controls="pp3"><i>04</i><span><b>Course Marketplace</b><small>Web · Vue.js</small></span><em class="q">Rebuilding</em></button></li>
@@ -284,9 +279,11 @@ h2,h3,.hero h1,.contact h2,.contact a.big,.soonmsg,.plist i,.role,.eyebrow{font-
           <div class="pbs"><a class="pb" href="https://github.com/MonesSawa/Mones-Sawaftah-Portfolio/releases/latest/download/VRDrivingSimSetup.exe">Download for Windows &#8595;</a><a class="pb s" href="docs/vr-driving-simulator-case-study.pdf" target="_blank" rel="noopener">Read the report</a></div>
           <p class="req">Windows installer, 154 MB. Tested on Oculus Quest with a Logitech wheel and pedals; keyboard controls included.</p></div></div>
         </article>
-        <article class="pp soon" id="pp1" role="tabpanel" hidden>
-          <div class="shot" role="img" aria-label="Placeholder for an upcoming game"><span class="ph">Placeholder: add screenshot or trailer</span><span class="soonmsg">In development</span></div>
-          <span class="badge">Coming soon</span><h3>Game Project Two</h3><p>A second game I'm currently building. The title, screenshots and a playable build will appear here.</p>
+        <article class="pp txt" id="pp1" role="tabpanel" hidden>
+          <div class="ptop"><span class="glyph" aria-hidden="true">&#9876;</span><span class="kind">Unity game · Work in progress</span><span class="badge">In development</span></div>
+          <div class="pd"><div><h3>Survivors-like Roguelite</h3><ul class="tags"><li>Unity</li><li>C#</li><li>2D</li></ul><p>A top-down survival game I'm building now: hold out against waves of enemies while your sword swings on its own, and grow stronger with every level-up.</p></div>
+          <div><ul class="facts"><li>Auto-attacking sword aimed with the mouse, with critical hits, knockback and life steal</li><li>Each level-up offers three random augments with a reroll; every second level unlocks an ability such as Fire Ball</li><li>Enemy types defined as data assets and spawned off-screen, with status effects like burn and a survival timer</li></ul>
+          <p class="req">Screenshots and a playable build will be added as the art comes in.</p></div></div>
         </article>
         <article class="pp txt" id="pp2" role="tabpanel" hidden>
           <div class="ptop"><span class="glyph" aria-hidden="true">&#9824;</span><span class="kind">Browser game</span><span class="badge">Playable</span></div>
@@ -314,18 +311,18 @@ h2,h3,.hero h1,.contact h2,.contact a.big,.soonmsg,.plist i,.role,.eyebrow{font-
     <h2>About</h2>
     <div class="cols">
       <div>
-        <p class="story">I studied Information Technology at Middlesex University Dubai. Games are the closest thing to magic I know how to build, and training real users on real software taught me to build things people can actually use.</p>
+        <p class="story">I studied Information Technology at Middlesex University Dubai, and today I troubleshoot healthcare software and train doctors, nurses and clinic staff to use it. Building websites and games keeps my technical skills sharp, and games are still the closest thing to magic I know how to build.</p>
         <h3 class="mini">Skills <small>Tap one to see where I've used it</small></h3>
         <div class="skills" id="skills">
-          <button class="chip" aria-pressed="false" data-s="unity">Unity</button><button class="chip" aria-pressed="false" data-s="csharp">C#</button><button class="chip" aria-pressed="false" data-s="cpp">C++</button><button class="chip" aria-pressed="false" data-s="vr">VR</button><button class="chip" aria-pressed="false" data-s="javascript">JavaScript</button><button class="chip" aria-pressed="false" data-s="node">Node.js</button><button class="chip" aria-pressed="false" data-s="vue">Vue.js</button><button class="chip" aria-pressed="false" data-s="flutter">Flutter</button><button class="chip" aria-pressed="false" data-s="mongodb">MongoDB</button><button class="chip" aria-pressed="false" data-s="sql">SQL</button><button class="chip" aria-pressed="false" data-s="git">Git</button><button class="chip" aria-pressed="false" data-s="support">Technical support</button><button class="chip" aria-pressed="false" data-s="training">Training</button>
+          <button class="chip" aria-pressed="false" data-s="support">Technical support</button><button class="chip" aria-pressed="false" data-s="troubleshooting">Troubleshooting</button><button class="chip" aria-pressed="false" data-s="training">User training</button><button class="chip" aria-pressed="false" data-s="unity">Unity</button><button class="chip" aria-pressed="false" data-s="csharp">C#</button><button class="chip" aria-pressed="false" data-s="cpp">C++</button><button class="chip" aria-pressed="false" data-s="vr">VR</button><button class="chip" aria-pressed="false" data-s="javascript">JavaScript</button><button class="chip" aria-pressed="false" data-s="node">Node.js</button><button class="chip" aria-pressed="false" data-s="vue">Vue.js</button><button class="chip" aria-pressed="false" data-s="flutter">Flutter</button><button class="chip" aria-pressed="false" data-s="mongodb">MongoDB</button><button class="chip" aria-pressed="false" data-s="sql">SQL</button><button class="chip" aria-pressed="false" data-s="git">Git</button>
         </div>
         <p class="readout" id="readout" aria-live="polite">Pick a skill to highlight the projects and roles where I used it.</p>
       </div>
       <div>
         <h3 class="mini">Experience</h3>
         <ul class="jobs">
-          <li data-skills="support,training"><span class="d">Oct 2025 to now</span><div><b>Product Officer &amp; Trainer</b><span>IT Flakes. Healthcare software support and staff training.</span></div></li>
-          <li data-skills="support"><span class="d">Dec 2024 to Jul 2025</span><div><b>Customer Sales Specialist</b><span>Lush. Product consultations and live demos.</span></div></li>
+          <li data-skills="support,troubleshooting,training"><span class="d">Oct 2025 to now</span><div><b>Product Officer &amp; Trainer</b><span>IT Flakes. Troubleshooting healthcare software, user support and staff training.</span></div></li>
+          <li data-skills="support"><span class="d">Dec 2024 to Jul 2025</span><div><b>Customer Sales Specialist</b><span>Lush. Customer-facing consultations and live product demos.</span></div></li>
           <li data-skills="flutter,javascript"><span class="d">Jun 2024</span><div><b>Full Stack Developer Intern</b><span>TC Enterprise. Flutter and JavaScript delivery app.</span></div></li>
           <li data-skills=""><span class="d">2021 to 2025</span><div><b>BSc Information Technology</b><span>Middlesex University Dubai.</span></div></li>
         </ul>
@@ -337,9 +334,9 @@ h2,h3,.hero h1,.contact h2,.contact a.big,.soonmsg,.plist i,.role,.eyebrow{font-
 <section id="contact" class="contact">
   <svg class="csig" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width=".6" aria-hidden="true"><circle cx="100" cy="100" r="96" stroke-dasharray="2 6"/><circle cx="100" cy="100" r="86"/><polygon points="100,14 174.5,143 25.5,143"/><polygon points="100,186 25.5,57 174.5,57"/><circle cx="100" cy="100" r="52" stroke-dasharray="10 5"/><circle cx="100" cy="100" r="8"/></svg>
   <div class="wrap">
-    <p class="eyebrow">Open to junior game development, front-end and full-stack roles</p>
-    <h2>Let's build something together</h2>
-    <p class="sub">Hiring, collaborating, or just want to talk games? My inbox is open.</p>
+    <p class="eyebrow">Open to IT support, help desk, front-end and junior game development roles</p>
+    <h2>Let's work together</h2>
+    <p class="sub">Hiring for support or development, looking to collaborate, or just want to talk games? My inbox is open.</p>
     <a class="big" href="mailto:Mo.sawaftah96@gmail.com">Mo.sawaftah96@gmail.com</a>
     <div class="btns"><a class="btn p" href="mailto:Mo.sawaftah96@gmail.com">Email me</a><button class="btn" id="copy" type="button">Copy email</button><a class="btn" href="Mones_Sawaftah_CV.pdf" download>Download CV</a></div>
     <div class="links"><a href="https://www.linkedin.com/in/mones-sawaftah-b809a8268/" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/MonesSawa" target="_blank" rel="noopener">GitHub</a></div>
@@ -405,10 +402,11 @@ h2,h3,.hero h1,.contact h2,.contact a.big,.soonmsg,.plist i,.role,.eyebrow{font-
     tabs.forEach(function(b){b.parentNode.hidden=f!=='all'&&b.parentNode.dataset.k!==f});document.querySelector('.lsep').hidden=f!=='all';
     var cur=tabs.filter(function(b){return b.getAttribute('aria-selected')==='true'})[0];if(cur.parentNode.hidden)pick(tabs.indexOf(tabs.filter(function(b){return !b.parentNode.hidden})[0]))})});
   var chips=[].slice.call(document.querySelectorAll('.skills .chip')),ro=document.getElementById('readout'),items=[].slice.call(document.querySelectorAll('.jobs li,.plist li:not(.lsep)')),act=null;
-  var gm=document.getElementById('galmain'),th=[].slice.call(document.querySelectorAll('.thumbs button'));
-  th.forEach(function(b){b.addEventListener('click',function(){if(b.getAttribute('aria-pressed')==='true')return;th.forEach(function(x){x.setAttribute('aria-pressed',x===b)});
-    function sw(){gm.src=b.dataset.src;gm.alt=b.dataset.alt;gm.style.objectPosition=b.dataset.pos;gm.classList.remove('out')}
-    if(calm)sw();else{gm.classList.add('out');setTimeout(sw,200)}})});
+  [].forEach.call(document.querySelectorAll('.gal'),function(g){
+    var gm=g.querySelector('.shot.real img'),th=[].slice.call(g.querySelectorAll('.thumbs button'));
+    th.forEach(function(b){b.addEventListener('click',function(){if(b.getAttribute('aria-pressed')==='true')return;th.forEach(function(x){x.setAttribute('aria-pressed',x===b)});
+      function sw(){gm.src=b.dataset.src;gm.alt=b.dataset.alt;gm.style.objectPosition=b.dataset.pos||'50% 50%';gm.classList.remove('out')}
+      if(calm)sw();else{gm.classList.add('out');setTimeout(sw,200)}})})});
   chips.forEach(function(c){c.addEventListener('click',function(){var k=c.dataset.s,on=act!==k,names=[];act=on?k:null;
     chips.forEach(function(x){x.setAttribute('aria-pressed',x===c&&on)});
     items.forEach(function(li){var hit=on&&(li.dataset.skills||'').split(',').indexOf(k)>-1;li.classList.toggle('dim',on&&!hit);li.classList.toggle('hit',hit);if(hit)names.push(li.querySelector('b').textContent)});
