@@ -281,7 +281,7 @@ h2,h3,.hero h1,.contact h2,.contact a.big,.soonmsg,.plist i,.role,.eyebrow{font-
           </div>
           <div class="pd"><div><h3>VR Driving Simulator</h3><ul class="tags"><li>Unity</li><li>C#</li><li>VR</li><li>Racing wheel input</li></ul><p>A driving simulator you sit inside: put on the headset, grip a real racing wheel, and drive.</p></div>
           <div><ul class="facts"><li>Added VR headset support and racing-wheel controls, with a keyboard fallback</li><li>Wrote custom vehicle-control and interaction systems, including a manual sequential gearbox</li><li>Lap timer with saved times to give every run a goal</li><li>Playtested with real users and evaluated through a survey on enjoyment and comfort</li></ul>
-          <div class="pbs"><a class="pb" href="https://github.com/MonesSawa/vr-driving-simulator/releases/latest/download/VRDrivingSimSetup.exe">Download for Windows &#8595;</a><a class="pb s" href="docs/vr-driving-simulator-case-study.pdf" target="_blank" rel="noopener">Read the report</a></div>
+          <div class="pbs"><a class="pb" href="https://github.com/MonesSawa/Mones-Sawaftah-Portfolio/releases/latest/download/VRDrivingSimSetup.exe">Download for Windows &#8595;</a><a class="pb s" href="docs/vr-driving-simulator-case-study.pdf" target="_blank" rel="noopener">Read the report</a></div>
           <p class="req">Windows installer, 154 MB. Tested on Oculus Quest with a Logitech wheel and pedals; keyboard controls included.</p></div></div>
         </article>
         <article class="pp soon" id="pp1" role="tabpanel" hidden>
@@ -390,8 +390,8 @@ h2,h3,.hero h1,.contact h2,.contact a.big,.soonmsg,.plist i,.role,.eyebrow{font-
       say('The page has caught fire. Click the star again to put it out.');setTimeout(function(){busy=false},1200)};
   });
   var rune=document.querySelector('.rune'),csig=document.querySelector('.csig'),con=document.getElementById('contact'),tk=false;
-  function onS(){tk=false;var y=scrollY;rune.style.setProperty('--rot',(y*.18).toFixed(1));rune.style.setProperty('--sc',(1+Math.min(y/innerHeight,1.2)*.3).toFixed(3));csig.style.setProperty('--rot2',(-con.getBoundingClientRect().top*.1).toFixed(1))}
-  if(!calm){addEventListener('scroll',function(){if(!tk){tk=true;requestAnimationFrame(onS)}},{passive:true});onS();
+  function onS(){tk=false;var y=scrollY;rune.style.setProperty('--rot',(y*.18).toFixed(1));rune.style.setProperty('--sc',(1+Math.min(y/(innerHeight||1),1.2)*.3).toFixed(3));csig.style.setProperty('--rot2',(-con.getBoundingClientRect().top*.1).toFixed(1))}
+  if(!calm){addEventListener('scroll',function(){if(!tk){tk=true;requestAnimationFrame(onS)}},{passive:true});addEventListener('resize',onS);onS();
     var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('show');io.unobserve(e.target)}})},{threshold:.08,rootMargin:'0px 0px -6% 0px'});
     [].forEach.call(document.querySelectorAll('main h2,.sub,.filters,.showcase,.story,h3.mini,.skills,.readout,.jobs li,.eyebrow,.contact .big,.contact .btns,.contact .links'),function(el){el.classList.add('rv');el.style.transitionDelay=Math.min([].indexOf.call(el.parentNode.children,el),5)*70+'ms';io.observe(el)})}
   var tabs=[].slice.call(document.querySelectorAll('.plist button')),pans=[].slice.call(document.querySelectorAll('.pp'));
