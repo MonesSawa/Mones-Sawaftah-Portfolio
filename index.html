@@ -264,8 +264,8 @@ h2,h3,.hero h1,.contact h2,.contact a.big,.soonmsg,.plist i,.role,.eyebrow{font-
       <ul class="plist" role="tablist" aria-label="Projects">
         <li data-k="game" data-skills="unity,csharp,vr"><button role="tab" aria-selected="true" aria-controls="pp0"><i>01</i><span><b>VR Driving Simulator</b><small>Game · Unity</small></span><em>Featured</em></button></li>
         <li data-k="game"><button role="tab" aria-selected="false" aria-controls="pp1"><i>02</i><span><b>Game Project Two</b><small>Game · In development</small></span><em class="q">Soon</em></button></li>
-        <li data-k="game"><button role="tab" aria-selected="false" aria-controls="pp2"><i>03</i><span><b>Game Project Three</b><small>Game · In development</small></span><em class="q">Soon</em></button></li>
         <li class="lsep" data-k="web" role="presentation" aria-hidden="true">Web &amp; mobile</li>
+        <li data-k="web" data-skills="javascript,node"><button role="tab" aria-selected="false" aria-controls="pp2"><i>03</i><span><b>3 Card Blackjack</b><small>Web · Browser game</small></span><em>Live</em></button></li>
         <li data-k="web" data-skills="vue,javascript,mongodb"><button role="tab" aria-selected="false" aria-controls="pp3"><i>04</i><span><b>Course Marketplace</b><small>Web · Vue.js</small></span><em class="q">Rebuilding</em></button></li>
         <li data-k="web" data-skills="flutter,javascript"><button role="tab" aria-selected="false" aria-controls="pp4"><i>05</i><span><b>Delivery App</b><small>Mobile · Flutter</small></span></button></li>
       </ul>
@@ -288,9 +288,11 @@ h2,h3,.hero h1,.contact h2,.contact a.big,.soonmsg,.plist i,.role,.eyebrow{font-
           <div class="shot" role="img" aria-label="Placeholder for an upcoming game"><span class="ph">Placeholder: add screenshot or trailer</span><span class="soonmsg">In development</span></div>
           <span class="badge">Coming soon</span><h3>Game Project Two</h3><p>A second game I'm currently building. The title, screenshots and a playable build will appear here.</p>
         </article>
-        <article class="pp soon" id="pp2" role="tabpanel" hidden>
-          <div class="shot" role="img" aria-label="Placeholder for an upcoming game"><span class="ph">Placeholder: add screenshot or trailer</span><span class="soonmsg">In development</span></div>
-          <span class="badge">Coming soon</span><h3>Game Project Three</h3><p>Another game in the works. Details and a demo will be added as it takes shape.</p>
+        <article class="pp txt" id="pp2" role="tabpanel" hidden>
+          <div class="ptop"><span class="glyph" aria-hidden="true">&#9824;</span><span class="kind">Browser game</span><span class="badge">Playable</span></div>
+          <div class="pd"><div><h3>3 Card Blackjack</h3><ul class="tags"><li>JavaScript</li><li>Node.js</li><li>HTML</li><li>CSS</li></ul><p>A quick twist on blackjack I built to keep my fundamentals sharp: every hand is capped at three cards, so each hit counts.</p></div>
+          <div><ul class="facts"><li>Real shuffled 52-card deck, so no card ever repeats in a round</li><li>Aces count 11 or 1; the dealer draws a third card below 15, then reacts to the result</li><li>Built with a Node.js game server; the playable version runs the same rules in the browser</li></ul>
+          <div class="pbs"><a class="pb" href="https://monessawa.github.io/3CardBlackjack/" target="_blank" rel="noopener">Play it live &#8599;</a><a class="pb s" href="https://github.com/MonesSawa/3CardBlackJack-W-Node.js" target="_blank" rel="noopener">Code</a></div></div></div>
         </article>
         <article class="pp txt" id="pp3" role="tabpanel" hidden>
           <div class="ptop"><span class="glyph" aria-hidden="true">&lt;/&gt;</span><span class="kind">Web application</span><span class="badge">Being rebuilt</span></div>
@@ -315,7 +317,7 @@ h2,h3,.hero h1,.contact h2,.contact a.big,.soonmsg,.plist i,.role,.eyebrow{font-
         <p class="story">I studied Information Technology at Middlesex University Dubai. Games are the closest thing to magic I know how to build, and training real users on real software taught me to build things people can actually use.</p>
         <h3 class="mini">Skills <small>Tap one to see where I've used it</small></h3>
         <div class="skills" id="skills">
-          <button class="chip" aria-pressed="false" data-s="unity">Unity</button><button class="chip" aria-pressed="false" data-s="csharp">C#</button><button class="chip" aria-pressed="false" data-s="cpp">C++</button><button class="chip" aria-pressed="false" data-s="vr">VR</button><button class="chip" aria-pressed="false" data-s="javascript">JavaScript</button><button class="chip" aria-pressed="false" data-s="vue">Vue.js</button><button class="chip" aria-pressed="false" data-s="flutter">Flutter</button><button class="chip" aria-pressed="false" data-s="mongodb">MongoDB</button><button class="chip" aria-pressed="false" data-s="sql">SQL</button><button class="chip" aria-pressed="false" data-s="git">Git</button><button class="chip" aria-pressed="false" data-s="support">Technical support</button><button class="chip" aria-pressed="false" data-s="training">Training</button>
+          <button class="chip" aria-pressed="false" data-s="unity">Unity</button><button class="chip" aria-pressed="false" data-s="csharp">C#</button><button class="chip" aria-pressed="false" data-s="cpp">C++</button><button class="chip" aria-pressed="false" data-s="vr">VR</button><button class="chip" aria-pressed="false" data-s="javascript">JavaScript</button><button class="chip" aria-pressed="false" data-s="node">Node.js</button><button class="chip" aria-pressed="false" data-s="vue">Vue.js</button><button class="chip" aria-pressed="false" data-s="flutter">Flutter</button><button class="chip" aria-pressed="false" data-s="mongodb">MongoDB</button><button class="chip" aria-pressed="false" data-s="sql">SQL</button><button class="chip" aria-pressed="false" data-s="git">Git</button><button class="chip" aria-pressed="false" data-s="support">Technical support</button><button class="chip" aria-pressed="false" data-s="training">Training</button>
         </div>
         <p class="readout" id="readout" aria-live="polite">Pick a skill to highlight the projects and roles where I used it.</p>
       </div>
